@@ -3,3 +3,9 @@ include *.md
 
 # Include the license file
 include LICENSE.txt
+
+# Include requirements file
+include requirements.txt
+
+# Include pexplore test_data
+recursive-include pexplore *.json
