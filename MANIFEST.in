@@ -6,3 +6,8 @@ include LICENSE.txt
 
 # Include requirements file
 include requirements.txt
+
+# Include file with test data.
+# I am not sure this if this is the right thing to do or not.
+# Trying to make check-manifest happy...
+pexplore/test_data/custom.json
