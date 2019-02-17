@@ -27,7 +27,7 @@ setup(
         ],
     keywords="forensics, tooling, development",
     packages=find_packages(exclude=["tests"]),
-    python_requires=">=3.7",
+    python_requires=">=3.6",
     extras_require={
         "dev": ["pytest", "pytest-cov"]
         },
