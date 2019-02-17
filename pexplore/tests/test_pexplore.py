@@ -1,6 +1,5 @@
 import pytest
 import shutil
-import json
 from pexplore import pexplore
 
 
