@@ -37,4 +37,11 @@ jobs:
       - store_artifacts:
           path: /home/circleci/repo/coverage-report.tgz
           destination: coverage-report.tgz
-            
+
+      - run:
+          name: run unit test with tox
+          command: |
+            source venv/bin/activate
+            tox
+
+
