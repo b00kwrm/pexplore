@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import sys
 import json
 from pprint import pprint
@@ -7,6 +9,9 @@ def open_psort_json(custom_json):
         pfile = json.load(f)
         return pfile
 
-if __name__ == "__main__":
-    pfile = open_psort_json(sys.argv[1])
+
+def main():
+    _file_name = sys.argv[1]
+    pfile = open_psort_json(_file_name)
     pprint(pfile)
+
