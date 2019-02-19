@@ -15,13 +15,12 @@ def open_psort_json(custom_json):
 
 def parse_args(custom_json):
     parser = argparse.ArgumentParser(description="Get tags from plaso json files")
-    parser.add_argument("file_name", help="name of the plaso file you want to process.")
-    args = parser.parse_args().name
+    parser.add_argument("infile", help="name of the plaso file you want to process.")
+    args = parser.parse_args().in_file
     return args
 
 
 def main():
-    _file_name = sys.argv[1]
-    pfile_name = parse_args(_file_name)
+    pfile_name = parse_args(args.infile)
     pfile = open_psort_json(pfile_name)
     pprint(pfile)
