@@ -17,7 +17,7 @@ def test_open_psort_json(custom_json):
 
 def test_get_tags(custom_json):
     jf = pexplore.open_psort_json(custom_json)
-    tags = get_tags(jf)
+    tags = pexplore.get_tags(jf)
     assert type(tags) == dict
     assert tags == {
         "T1156_bash_profile_and_bashrc": 3,
