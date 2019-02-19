@@ -10,8 +10,13 @@ def open_psort_json(custom_json):
         pfile = json.load(f)
         return pfile
 
+
 def get_tags(pfile):
-    return
+    for session in pfile:
+        if pfile[session]["analysis_reports_counter"].get("tagging"):
+            tags = pfile[session]["event_labels_counter"]
+    return tags
+
 
 def main():
     pfile_name = sys.argv[1]
