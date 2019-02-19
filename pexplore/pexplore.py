@@ -10,6 +10,8 @@ def open_psort_json(custom_json):
         pfile = json.load(f)
         return pfile
 
+def get_tags(pfile):
+    return
 
 def main():
     pfile_name = sys.argv[1]
