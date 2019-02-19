@@ -6,6 +6,7 @@ import json
 from pprint import pprint
 import argparse
 
+
 def open_psort_json(custom_json):
     with open(custom_json) as f:
         pfile = json.load(f)
