@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-# https://github.com/brandon-rhodes/fopnp/blob/m/py3/chapter04/dns_basic.py
 
 import sys
 import json
@@ -13,14 +12,7 @@ def open_psort_json(custom_json):
         return pfile
 
 
-def parse_args(custom_json):
-    parser = argparse.ArgumentParser(description="Get tags from plaso json files")
-    parser.add_argument("infile", help="name of the plaso file you want to process.", type=argparse.FileType('r'))
-    args = parser.parse_args().infile
-    return args
-
-
 def main():
-    pfile_name = parse_args(args.infile)
+    pfile_name = sys.argv[1]
     pfile = open_psort_json(pfile_name)
     pprint(pfile)

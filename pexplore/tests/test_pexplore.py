@@ -15,6 +15,4 @@ def test_open_psort_json(custom_json):
     assert type(jf) == dict
 
 
-def test_add_command_line_arguments(custom_json):
-    args = pexplore.parse_args(custom_json)
-    assert args == "test fail"
+
