@@ -15,7 +15,7 @@ def open_psort_json(custom_json):
 def parse_args(custom_json):
     parser = argparse.ArgumentParser(description="Get tags from plaso json files")
     parser.add_argument("file_name", help="name of the plaso file you want to process.")
-    args = parser.paser_args().name
+    args = parser.parse_args().name
     return args
 
 
