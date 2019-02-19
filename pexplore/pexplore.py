@@ -3,7 +3,6 @@
 import sys
 import json
 from pprint import pprint
-import argparse
 
 
 def open_psort_json(custom_json):
@@ -16,3 +15,7 @@ def main():
     pfile_name = sys.argv[1]
     pfile = open_psort_json(pfile_name)
     pprint(pfile)
+
+
+if __name__ == "__main__":
+    main()
