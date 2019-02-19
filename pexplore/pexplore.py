@@ -14,7 +14,8 @@ def open_psort_json(custom_json):
 def main():
     pfile_name = sys.argv[1]
     pfile = open_psort_json(pfile_name)
-    pprint(pfile)
+    tags = get_tags(pfile)
+    pprint(tags)
 
 
 if __name__ == "__main__":
