@@ -13,6 +13,3 @@ def custom_json(tmpdir_factory):
 def test_open_psort_json(custom_json):
     jf = pexplore.open_psort_json(custom_json)
     assert type(jf) == dict
-
-
-
