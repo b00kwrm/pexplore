@@ -2,6 +2,7 @@
 import click
 import json
 
+
 @click.command()
 @click.argument("input", type=click.File("rb"))
 def cli(input):
