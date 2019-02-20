@@ -33,7 +33,7 @@ setup(
         },
     entry_points={
         "console_scripts": [
-            "pexplore=pexplore.pexplore:main"
+            "pexplore=pexplore.pexplore:cli"
             ],
         },
     project_urls={
