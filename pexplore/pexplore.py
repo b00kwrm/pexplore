@@ -11,7 +11,7 @@ def cli(input):
         if pfile[session]["analysis_reports_counter"].get("tagging"):
             tags = pfile[session]["event_labels_counter"]
             ptags = json.dumps(tags)
-    click.echo(ptags)
+    click.echo(ptags, nl=False)
 
 
 if __name__ == "__main__":
