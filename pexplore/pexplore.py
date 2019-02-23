@@ -10,7 +10,8 @@ def cli(input):
     for session in pfile:
         if pfile[session]["analysis_reports_counter"].get("tagging"):
             tags = pfile[session]["event_labels_counter"]
-    click.echo(tags)
+            ptags = json.dumps(tags)
+    click.echo(ptags)
 
 
 if __name__ == "__main__":
