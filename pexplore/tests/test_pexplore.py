@@ -22,6 +22,3 @@ def test_pexplore_cli():
         # dump json back to a string for test
         valid_json_string = json.dumps(valid_json)
         assert valid_json_string == tags
-
-        
-        
