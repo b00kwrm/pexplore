@@ -19,6 +19,4 @@ def test_pexplore_cli():
         assert result.exit_code == 0
         # hacky test for valid json
         valid_json = json.loads(result.output)
-        # dump json back to a string for test
-        valid_json_string = json.dumps(valid_json)
-        assert valid_json_string == tags
+        assert result.output == tags
