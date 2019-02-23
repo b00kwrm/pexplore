@@ -17,6 +17,4 @@ def test_pexplore_cli():
             f.write(pinfo_file)
         result = runner.invoke(pexplore.cli, ["pinfo_file.json"])
         assert result.exit_code == 0
-        # hacky test for valid json
-        valid_json = json.loads(result.output)
         assert result.output == tags
