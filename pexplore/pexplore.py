@@ -6,7 +6,7 @@ import json
 @click.command()
 @click.argument("input", type=click.File("rb"))
 def cli(input):
-    """Pexplore works with json files created by pinfo. To create a 
+    """Pexplore works with json files created by pinfo. To create a
        file to use with pexplore run:
 
        pinfo.py -v --output_format json -w pinfo.json myfile.plaso
