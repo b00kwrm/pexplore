@@ -16,7 +16,7 @@ def cli(input):
 
        pexplore.py pinfo.json
        """
-       
+
     pfile = json.load(input)
     for session in pfile:
         if pfile[session]["analysis_reports_counter"].get("tagging"):
