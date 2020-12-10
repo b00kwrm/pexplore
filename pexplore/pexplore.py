@@ -18,10 +18,9 @@ def cli(input):
        """
 
     pfile = json.load(input)
-    for session in pfile:
-        if pfile[session]["analysis_reports"].get("tagging"):
-            tags = pfile[session]["event_labels_counter"]
-            ptags = json.dumps(tags)
+    if pfile["storage_counters"]["analysis_reports"].get("tagging"):
+        tags = pfile["storage_counters"]["event_labels"]
+        ptags = json.dumps(tags)
     click.echo(ptags, nl=False)
 
 
