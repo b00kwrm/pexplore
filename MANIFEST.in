@@ -10,4 +10,4 @@ include requirements.txt
 # Include file with test data.
 # I am not sure this if this is the right thing to do or not.
 # Trying to make check-manifest happy...
-include pexplore/test_data/new_custom.json
+recursive-include pexplore *.json
